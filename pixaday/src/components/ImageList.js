@@ -15,7 +15,7 @@ const ImageList = (props) => {
       );
     });
   return (
-    <Masonry>
+    <Masonry className = 'image-list'>
     {images}
   </Masonry>
     );

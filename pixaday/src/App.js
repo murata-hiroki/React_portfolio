@@ -8,11 +8,11 @@ import './styles/ImagesList.css'
 
 const App = () =>{
   const [images,setImages] = useState([]);
-  const ApiKey = process.env.REACT_APP_PIXABAY_APIKEY;
+  const API = process.env.REACT_APP_PIXABAY_APIKEY;
   const onSerchSubmit = async(term)=>{
     try{
       const params = {
-        key: ApiKey,
+        key:API,
         q: term,
       };
       const response = await axios.get('https://pixabay.com/api/',{params});
@@ -20,7 +20,8 @@ const App = () =>{
       if(response.data.total === 0) {
         window.alert('お探しの画像はありません。');
       }
-    }catch{
+    }catch(err){
+      console.log(err)
       window.alert('写真の取得に失敗しました');
     }
   };
