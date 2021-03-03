@@ -19,7 +19,7 @@ Pixabay外部API
 
 
 # デプロイに使用した技術
-AWS S3
+AWS S3<br>
 AWS CloudFront
 
 
