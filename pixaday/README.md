@@ -7,11 +7,11 @@ PixadayApiを活用した、画像検索App
 
 
 # アプリ作成に用いた技術
-react 17.0.1
-react-dom 17.0.1
-react-masonry-component 6.2.1
-node 14.15.3
-axios 0.21.1
+react 17.0.1<br>
+react-dom 17.0.1<br>
+react-masonry-component 6.2.1<br>
+node 14.15.3<br>
+axios 0.21.1<br>
 
 
 # 使用した外部API
